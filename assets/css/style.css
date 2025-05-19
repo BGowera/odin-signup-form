@@ -1,53 +1,163 @@
-/*img{
-    width:100%;
-}*/
-.container{
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    display: flex;
-    height: 100vh;
-  }
-
-.left{
-    width:40%;
-background: center no-repeat url(../img/Fern.jpg) ;
-padding-top:10%;
-background-size: auto;
-height: auto;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+input {
+	border: 1px solid #e5e7eb;
+	padding: 0.25rem 0.5rem;
+	border-radius: 5px;
 }
 
-.heading-container{
-    padding: .5rem;
-    background:rgba(35, 34, 34, 0.689);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:1rem;
-}
-.odin-logo{
-    width:3rem;
-    height:auto;
+input:focus {
+	border: 1px solid rgb(88, 235, 227);
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
 }
 
-.main-heading{
-    font-family: "Skranji", "Inter", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color:white;
-    font-size: 3rem;
+input:invalid {
+	border: 1px solid rgb(244, 53, 53);
 }
 
-.attribution{
-    color:white;
-    margin:1rem;
-    text-align: center;
+.container {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	display: flex;
+	height: 100vh;
 }
 
-.attribution-link{
-    color: white;
-    text-decoration: underline;
+.left {
+	width: 40%;
+	background: center no-repeat url(../img/Fern.jpg);
+	padding-top: 20%;
+	background-size: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.heading-container {
+	padding: 0.5rem;
+	background: rgba(35, 34, 34, 0.689);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.odin-logo {
+	width: 3rem;
+	height: auto;
+}
+
+.main-heading {
+	font-family: "Skranji", "Inter", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+	font-size: 3rem;
+}
+
+.attribution {
+	color: white;
+	margin: 1rem;
+	text-align: center;
+}
+
+.attribution-link {
+	color: white;
+	text-decoration: underline;
+}
+
+.right {
+	padding: 2rem 3rem;
+}
+
+.opening-para {
+	color: rgb(28, 28, 28);
+	font-size: 1.5rem;
+	font-weight: 600;
+	width: 70%;
+}
+
+.form-section {
+	padding: 2rem 0;
+}
+
+.form-heading {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+.required-explanation {
+	font-size: 1rem;
+	font-weight: 500;
+	color: rgb(240, 102, 102);
+}
+
+.main-form {
+	padding: 2rem 4rem;
+	display: flex;
+	flex-direction: column;
+}
+.form-field {
+	margin-bottom: 1.5rem;
+}
+
+label {
+	font-size: 0.8rem;
+	font-weight: 400;
+	
+}
+
+.required{
+	color:rgb(240, 102, 102);
+}
+
+fieldset {
+	display: flex;
+	gap:3rem;
+	width: 80%;
+	border: none;
+}
+
+.form-field {
+	display: flex;
+	justify-content: flex;
+	align-items: center;
+}
+
+.form-field > div {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/*gap: 0.5rem;*/
+}
+.btn-field {
+	width: 20%;
+}
+
+.submit-btn {
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	border: none;
+	background-color: rgb(13, 88, 13);
+	color: white;
+	margin-bottom: 1.5rem;
+		&:hover{
+			cursor: pointer;
+			box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+			-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+		}
+}
+
+.log-link{
+	color:rgb(13, 88, 13);
+		&:hover{
+			text-decoration: underline;
+		}
 }
